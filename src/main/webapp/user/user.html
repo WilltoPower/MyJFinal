@@ -1,0 +1,18 @@
+<b>===用户列表页===</b><br><br>
+
+
+#(msg)
+<a>序号</a>
+<a>ID</a>
+<a>姓名</a>
+<a>密码</a>
+<br>
+#for(x:us)
+
+#(x.id)
+#(x.name)
+#(x.password)
+<br>
+#else
+用户注册请点击<a href="/user/add">注册</a>
+#end
